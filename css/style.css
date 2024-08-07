@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-
 /* Variaveis das Cores */
 /* TEMA DARK */
 :root, :root[data-theme='dark'] {
@@ -14,16 +12,54 @@
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A;
     --title-color: #F0F0F0;
-    --text-color: #8f8f8f;
-    --link-color: #F0F0F0;
+    
+    --link-color: #8f8f8f;
+    --link-hover: #F0F0F0;
+
     --icon-color: #C7C8C9;
 }
 /* TEMA LIGHT */
 :root[data-theme='light'] {
-    --primary-color: #000; /* cor principal textos */
+    --primary-color: #0d0c09; /* cor principal textos */
+
     --primary-bg-color: #f0f2f5;
+    --secondary-bg-color: #C7C8C9;
+
+    --primary-border-color: #C7C8C9;
+	--secondary-border-color: #9A9A9C;
+
+	--title-color: #0B0B0F;
+	--link-hover: #a3a2a2;
+	--link-color: #0B0B0F;
+	--icon-color: #56575A;
 }
+
+/* Reset CSS */
+* {
+    margin: 0; /*margem */
+    padding: 0px; /* preenchimento */
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
 body {
     background: var(--primary-bg-color); /*cor fundo*/
     color: var(--primary-color);  /*cor geral dos textos*/
+    font-family: 'Playwrite', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+
+
+
