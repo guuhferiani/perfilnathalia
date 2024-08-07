@@ -10,8 +10,13 @@
     --primary-color: #f0f0f0;  /*cor principal Textos*/
     --primary-bg-color: #171511;  /*cor principal Fundo*/ 
     /* bg = background == cor do Fundo */
-
-
+    --secondary-bg-color: #28292E;  
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
+    --title-color: #F0F0F0;
+    --text-color: #8f8f8f;
+    --link-color: #F0F0F0;
+    --icon-color: #C7C8C9;
 }
 /* TEMA LIGHT */
 :root[data-theme='light'] {
