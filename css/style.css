@@ -60,6 +60,24 @@ a:hover {
     color: var(--link-hover);
 }
 
+i {
+   color: var(--icon-color); 
+}
 
-
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;/*sobreposição*/
+}
+   
+.header-logo .logo{
+    width: 3.25rem;
+    height: 3.25rem;
+}
 
