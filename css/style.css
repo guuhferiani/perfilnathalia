@@ -6,7 +6,7 @@
 /* TEMA DARK */
 :root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;  /*cor principal Textos*/
-    --primary-bg-color: #171511;  /*cor principal Fundo*/ 
+    --primary-bg-color: #171111;  /*cor principal Fundo*/ 
     /* bg = background == cor do Fundo */
     --secondary-bg-color: #28292E;  
     --primary-border-color: #28292E;
@@ -80,4 +80,26 @@ i {
     width: 3.25rem;
     height: 3.25rem;
 }
+
+#toggleTheme {
+    font-size: 1.5rem; 
+    color: var(--icon-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+.menu {
+    display: flex;
+    /* Torna o Elemento um Flex container automaticamente transformando todos os filhos diretos em Flex Itens  */
+    align-items: center;
+    background: var(--primary-bg-color);
+    gap: 1rem;
+} 
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 
