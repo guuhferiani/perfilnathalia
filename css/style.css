@@ -102,9 +102,34 @@ i {
     gap: .5rem;
 }
 
-.menu-mobile {
+.menu-mobile {   /* UL */
     width: 100%;
     position: fixed;
     bottom: 0;
-    
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
 }
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem 1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: var(--link-hover);
+}
+
+.menu-icon, .menu-text {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+
