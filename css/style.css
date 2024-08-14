@@ -102,4 +102,9 @@ i {
     gap: .5rem;
 }
 
-
+.menu-mobile {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+}
