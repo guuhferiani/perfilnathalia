@@ -132,4 +132,35 @@ i {
     font-size: 1.5rem;
 }
 
+.menu-text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    display: none;
+}
+
+.menu-principal {
+    gap: 1rem;
+}
+
+
+/* =====  --------------------- ======= */
+
+/* CSS Responsivo */
+@media (min-width: 768px)  {
+    .header {
+        position: fixed;
+        border-bottom: 3px solid var(--primary-border-color);
+        padding: 1rem 6rem;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav {
+        display: flex;
+    }
+}
+
 
