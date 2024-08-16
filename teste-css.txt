@@ -10,3 +10,8 @@
     position: relative;
     bottom: 10px;
 }
+
+html[data-theme='light'] .logo1,
+html[data-theme='light'] .logo2{
+    filter: invert(1);
+}
