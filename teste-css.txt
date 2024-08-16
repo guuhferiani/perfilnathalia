@@ -1,0 +1,12 @@
+.header-logo .logo1 {
+    width: 3rem;
+    height: 3rem;
+}
+
+.header-logo .logo2 {
+    width: 6.25rem;
+    height: 1.25rem;
+    margin-left: 20px;
+    position: relative;
+    bottom: 10px;
+}
