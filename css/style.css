@@ -82,14 +82,18 @@ i {
 }
 
 .header-logo .logo2 {
-    width: 6.25rem;
-    height: 1.25rem;
-    margin-left: 20px;
+    width: 15rem;
+    height: 2rem;
+    margin-left: 10px;
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
 }
 
 html[data-theme='light'] .logo {
+    filter: invert(1);
+} 
+
+html[data-theme='light'] .logo2 {
     filter: invert(1);
 } 
 
