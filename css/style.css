@@ -10,7 +10,7 @@
     /* bg = background == cor do Fundo */
     --secondary-bg-color: #28292E;  
     --primary-border-color: #28292E;
-    --secondary-border-color: #56575A;
+    --secondary-border-color: #c1c2c4;
     --title-color: #F0F0F0;
     
     --link-color: #8f8f8f;
@@ -160,6 +160,58 @@ html[data-theme='light'] .logo2 {
 .menu-principal {
     gap: 1rem;
 }
+
+.menu-social {
+   gap: 1rem; 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    transition: ease-in-out .3s;
+}
+
+.btn-primary {
+    border: 1px solid var(--secondary-border-color);
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    transition: ease-in-out 0.5s;
+}
+
+.btn span,
+.btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.btn-primary span {
+    color: var(--primary-color);
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+
+
 
 
 /* =====  --------------------- ======= */
