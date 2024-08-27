@@ -208,6 +208,16 @@ html[data-theme='light'] .logo2 {
     gap: 1.5rem;
 }
 
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, .projetos, .sobre, .contato {
+    padding: 7rem 5rem;
+}
+
+
 
 
 
