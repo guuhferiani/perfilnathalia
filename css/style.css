@@ -214,12 +214,70 @@ html[data-theme='light'] .logo2 {
 }
 
 #home, .projetos, .sobre, .contato {
-    padding: 3.5rem 5rem;
+    padding: 5rem 5rem;
 }
 
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
 
+.card-cover {
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
 
+.card-title {
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.card-description {
+    color: var(--primary-color);
+    /* font-size: ; */
+    text-align: justify;
+}
+
+.card-lista {
+    margin-left: 2rem;
+}
+
+.card-item {
+    list-style: circle;
+    margin: 0.25rem;
+}
+
+.card-button, .card-description {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+
+.card-button .btn span {
+    font-size: 1rem;
+}
 
 
 
