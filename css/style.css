@@ -299,4 +299,32 @@ html[data-theme='light'] .logo2 {
     }
 }
 
+@media (min-width: 992px) {
+    .projeto-card {
+        flex-direction: row;
+    }
+    .projeto-card.card-reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .card-cover {
+        width: 55%;
+    }
+    .sobre {
+        gap: 5rem;
+    }
+    .sobre-content1, .sobre-content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
+}
 
