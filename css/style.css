@@ -37,7 +37,7 @@
 /* Reset CSS */
 * {
     margin: 0; /*margem */
-    padding: 0px; /* preenchimento */
+    padding: 0; /* preenchimento */
     box-sizing: border-box;
     vertical-align: baseline;
     list-style: none;
@@ -228,6 +228,12 @@ html[data-theme='light'] .logo2 {
     gap: 4rem;
 }
 
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .card-cover {
     width: 100%;
     border-radius: 2rem;
@@ -297,34 +303,48 @@ html[data-theme='light'] .logo2 {
     .header-nav {
         display: flex;
     }
-}
+    .header-nav, 
+    .header-toggle {
+        min-width: 30%;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    #home, .projetos, .sobre, .contato {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contato {
+        padding: 6rem;
+    }
+    .contato p {
+        width: 80%;
+    }
+    footer {
+        margin: 0;
+    }
+}  
+/* -------- fim resolução 768 */
+
 
 @media (min-width: 992px) {
     .projeto-card {
         flex-direction: row;
     }
-    .projeto-card.card-reverse {
+    .card-reverse {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
     .card-cover {
         width: 55%;
     }
-    .sobre {
-        gap: 5rem;
-    }
-    .sobre-content1, .sobre-content2 {
-        display: grid;
-        grid-template-columns: 34% 60%;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 4rem;
-    }
-    .sobre-descricao h2 {
-        text-align: left;
-    }
-    .descricao-button {
-        justify-content: flex-start;
-    }
-}
+    
 
+}
