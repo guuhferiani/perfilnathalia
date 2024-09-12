@@ -285,6 +285,26 @@ html[data-theme='light'] .logo2 {
     font-size: 1rem;
 }
 
+/* === Sobre === */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-content1, .sobre-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sobre-perfil {   /* imagem */
+    width: 100%;
+    border-radius: 50rem;
+    border: 8px solid var(--link-color); /* cor da borda */
+}
+
 
 
 
@@ -331,8 +351,9 @@ html[data-theme='light'] .logo2 {
         margin: 0;
     }
 }  
-/* -------- fim resolução 768 */
 
+
+/* -------- fim resolução 768 */
 
 @media (min-width: 992px) {
     .projeto-card {
@@ -346,6 +367,12 @@ html[data-theme='light'] .logo2 {
     .card-cover {
         width: 55%;
     }
-    
-
+    .sobre {
+        gap: 5rem;
+    }
+    .sobre-content1, 
+    .sobre-content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+    }
 }
