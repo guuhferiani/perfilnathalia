@@ -102,6 +102,8 @@ html[data-theme='light'] .logo2 {
     color: var(--icon-color);
     cursor: pointer;
     transition: ease-in-out .4s;
+    float: right;
+    position: relative;
 }
 
 .menu {
@@ -305,6 +307,75 @@ html[data-theme='light'] .logo2 {
     border: 8px solid var(--link-color); /* cor da borda */
 }
 
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.sobre-icones {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sobre-icones i {
+    font-size: 1.25rem;
+}
+
+.sobre-content2 .col1,
+.sobre-content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+/* --- Cursos --- */
+.accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--primary-border-color);
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.accordion-header span {
+    color: var(--title-color);
+}
+
+.accordion-header.start {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.accordion-header.end,
+.accordion-item.active .accordion-body.end {
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+
+.accordion-body {
+    /* display: none; */
+    padding: 1.25rem;
+    flex-direction: column;
+    text-align: justify;
+    align-items: flex-start;
+    gap: 1rem;
+    border: 1px solid var(--primary-border-color);
+}
 
 
 
