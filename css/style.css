@@ -366,6 +366,9 @@ html[data-theme='light'] .logo2 {
     border-radius: 0rem 0rem 1rem 1rem;
 }
 
+.accordion-item.active .accordion-item.end {
+    border-radius: 0;
+}
 
 .accordion-body {
     /* display: none; */
@@ -377,7 +380,15 @@ html[data-theme='light'] .logo2 {
     border: 1px solid var(--primary-border-color);
 }
 
+.accordion-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+}
 
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+
+/* Rotacionar Icone */
 
 /* =====  --------------------- ======= */
 
