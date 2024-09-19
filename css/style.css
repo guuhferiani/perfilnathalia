@@ -371,7 +371,7 @@ html[data-theme='light'] .logo2 {
 }
 
 .accordion-body {
-    /* display: none; */
+    display: none;
     padding: 1.25rem;
     flex-direction: column;
     text-align: justify;

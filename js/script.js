@@ -30,3 +30,4 @@ accordionHeaders.forEach(header => {
         accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
     })
 })
+
