@@ -63,7 +63,9 @@ a:hover {
 i {
    color: var(--icon-color); 
 }
-
+b{
+    font-weight: 400;
+}
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -496,6 +498,12 @@ footer p {
         align-items: flex-start;
         gap: 4rem;
     }
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -507,6 +515,9 @@ footer p {
     }
     #home {
         padding: 10rem 6rem 2rem;
+    }
+    .main-content .btn {
+        width: auto;
     }
     p, span, li {
         font-size: 1.15rem;
@@ -526,5 +537,8 @@ footer p {
     }
     h3 {
         font-size: 3.25rem;
+    }
+    .header {
+        padding: 12rem 15rem 2rem;
     }
 }
