@@ -342,20 +342,19 @@ html[data-theme='light'] .logo2 {
     flex-direction: column;
     gap: .5rem;
 }
-/* --- Cursos --- */
 .accordion-header {
     width: 100%;
     display: flex;
     padding: 0.75rem 1rem;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
     border: 1px solid var(--primary-border-color);
+    background: transparent;
     text-align: left;
     cursor: pointer;
     transition: ease-in-out .3s;
+    border-radius: 0;
 }
-
 .accordion-header span {
     color: var(--title-color);
 }
@@ -363,13 +362,13 @@ html[data-theme='light'] .logo2 {
 .accordion-header.start {
     border-radius: 1rem 1rem 0rem 0rem;
 }
-
+  
 .accordion-header.end,
 .accordion-item.active .accordion-body.end {
     border-radius: 0rem 0rem 1rem 1rem;
 }
-
-.accordion-item.active .accordion-item.end {
+  
+.accordion-item.active .accordion-header.end{
     border-radius: 0;
 }
 
@@ -377,21 +376,16 @@ html[data-theme='light'] .logo2 {
     display: none;
     padding: 1.25rem;
     flex-direction: column;
-    text-align: justify;
     align-items: flex-start;
-    gap: 1rem;
+    gap: .625rem;
     border: 1px solid var(--primary-border-color);
 }
-
 .accordion-item.active .accordion-header {
     background: var(--secondary-bg-color);
 }
-
 .accordion-item.active .accordion-body {
     display: flex;
 }
-
-/* Rotacionar Icone */
 .accordion-item.active .bi-caret-down-fill {
     transform: rotate(180deg);
 }
@@ -540,5 +534,8 @@ footer p {
     }
     .header {
         padding: 12rem 15rem 2rem;
+    }
+    .projetos, .sobre {
+        padding: 10rem 15rem 4rem;
     }
 }
